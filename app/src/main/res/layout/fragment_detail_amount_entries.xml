@@ -1,0 +1,192 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ugochukwu.hyperspender.FragmentDetailAmountEntries">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/parent_linear_layout"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sorry no data to display"
+                android:textSize="25sp"
+                android:id="@+id/txt_no_data"
+                android:gravity="center"
+                android:textColor="#FF0000"
+                android:visibility="gone"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:id="@+id/linear_layout_parent">
+            <LinearLayout
+                android:id="@+id/tableRow1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_enabled"
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_detail_amount"
+                    android:text="Amount :"
+                    android:textStyle="bold"
+                    android:layout_weight="1.9"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_detail_amount_value"
+                    android:text="Two Column"
+                    android:layout_column="2"
+                    android:layout_weight="0.1"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:id="@+id/tableRow2"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_enabled"
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_detail_category"
+                    android:text="Category :"
+                    android:textStyle="bold"
+                    android:layout_weight="1.9"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_detail_category_value"
+                    android:text="Column Two"
+                    android:layout_column="2"
+                    android:layout_weight="0.1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:id="@+id/tableRow3"
+                android:background="@drawable/edit_text_enabled"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_detail_brief_description"
+                    android:text="Brief Description :"
+                    android:textStyle="bold"
+                    android:layout_weight="1.9"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_detail_brief_description_value"
+                    android:layout_marginRight="0dp"
+                    android:text="Column Two"
+                    android:layout_column="2"
+
+                    android:layout_weight="0.1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/tableRow4"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/edit_text_enabled"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="15dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_detail_date"
+                    android:text="Date :"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1.9"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_detail_date_value"
+                    android:text="Column Two"
+                    android:layout_column="2"
+                    android:layout_weight="0.1"/>
+            </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/tableRow5"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="70dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_detail_edit_button"
+                android:onClick="onClickEdit"
+                android:background="@drawable/button_look_and_feel"
+                android:text="Edit"
+                android:layout_weight="1" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_detail_delete_button"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button_look_and_feel"
+                android:onClick="onClickDelete"
+                android:text="Delete"
+                android:layout_weight="1" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_detail_close_button"
+                android:onClick="onClickClose"
+                android:background="@drawable/button_look_and_feel"
+                android:text="Close"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+            </LinearLayout>
+    </LinearLayout>
+</ScrollView>

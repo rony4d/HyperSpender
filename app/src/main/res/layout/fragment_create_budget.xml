@@ -1,0 +1,58 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ugochukwu.hyperspender.CreateBudgetFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:id="@+id/monthBudgetName"
+                android:text="JuneBudget"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:hint="Add Budget Amount"
+                android:inputType="numberDecimal"
+                android:background="@drawable/edit_text_design"
+                android:ems="10"
+                android:layout_marginTop="40dp"
+                android:id="@+id/monthBudgetAmount"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/edit_text_design"
+                android:layout_below="@+id/monthBudgetAmount"
+                android:hint="Add Comment"
+                android:id="@+id/monthBudgetComment"
+                android:layout_marginTop="35dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/monthSaveButton"
+                android:text="Save"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/button_look_and_feel"
+                android:onClick="onClickMonthBudgetSave"/>
+
+    </LinearLayout>
+
+</ScrollView>

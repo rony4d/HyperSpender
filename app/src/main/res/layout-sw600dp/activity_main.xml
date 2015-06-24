@@ -1,0 +1,49 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- Framelayout to display Fragments -->
+    <LinearLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:divider="?android:attr/dividerHorizontal"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.example.ugochukwu.hyperspender.ActivityDetailMonthList">
+        <fragment xmlns:android = "http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/detail_month_fragment"
+            android:name="com.example.ugochukwu.hyperspender.FragmentDetailMonthList"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            tools:context = "com.example.ugochukwu.hyperspender.FragmentDetailMonthList"
+            tools:layout="@android:layout/list_content"/>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:id="@+id/detail_amount_entries_container">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+    <!-- Listview to display slider menu -->
+    <ListView
+        android:id="@+id/list_slidermenu"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector"
+        android:background="@color/list_background"/>
+</android.support.v4.widget.DrawerLayout>

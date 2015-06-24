@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/list_view_grand_parent"
+    tools:context="com.example.ugochukwu.hyperspender.FragmentDetailMonthList">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_layout_top"
+        android:layout_above="@+id/footer_relative_layout">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/detailMonthListView"
+            android:choiceMode="singleChoice"
+            >
+
+        </ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#477BB1"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/footer_net_balance"
+            android:textColor="#F7F9FA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#477BB1"
+            android:text="Net Balance :"
+            android:onClick="onClickNetBalance"/>
+        <TextView
+            android:id="@+id/footer_gross_balance"
+            android:textColor="#F7F9FA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#477BB1"
+            android:text="Gross Balance :"
+            android:layout_below="@+id/footer_net_balance"
+            android:onClick="onClickGrossBalance"/>
+        <TextView
+            android:id="@+id/footer_net_balance_value"
+            android:textColor="#F7F9FA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#477BB1"
+            android:text="N200"
+            android:layout_above="@+id/footer_gross_balance"
+            android:layout_toRightOf="@+id/footer_net_balance"
+            android:layout_toEndOf="@+id/footer_net_balance" />
+        <TextView
+            android:id="@+id/footer_gross_balance_value"
+            android:textColor="#F7F9FA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#477BB1"
+            android:text="N48000"
+            android:layout_alignTop="@+id/footer_gross_balance"
+            android:layout_toRightOf="@+id/footer_gross_balance"
+            android:layout_toEndOf="@+id/footer_gross_balance" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

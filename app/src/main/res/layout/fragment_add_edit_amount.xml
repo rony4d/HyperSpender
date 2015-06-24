@@ -1,0 +1,64 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ugochukwu.hyperspender.FragmentAddEditAmount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/amountDate"
+                android:text="Mon,25th June"
+                android:textSize="20sp"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Category"
+                android:id="@+id/amountCategory"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/button_look_and_feel"
+                android:layout_marginTop="25dp"
+                android:onClick="onClickCategory"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/amountBriefDescription"
+                android:background="@drawable/edit_text_design"
+                android:hint="Brief Description"
+                android:layout_marginTop="40dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_amount"
+                android:inputType="numberDecimal"
+                android:background="@drawable/edit_text_design"
+                android:hint="Enter Amount"
+                android:layout_marginTop="35dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/amountSave"
+                android:text="Save"
+                android:layout_marginTop="35dp"
+                android:textColor="#FFFFFF"
+                android:onClick="onClickSave"
+                android:background="@drawable/button_look_and_feel"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ugochukwu.hyperspender.ActivityDetailMonthList">
+    <item android:id="@+id/action_settings"
+        android:title="Settings"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_add_amount_spent"
+        android:title="Add Amount Spent"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_add_amount_made"
+        android:title="Add Amount Made"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_edit_budget"
+        android:title="Edit Budget"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_budget_graph"
+        android:title="View Graph"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+
+</menu>

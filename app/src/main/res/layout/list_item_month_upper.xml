@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="#477BB1"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+        <TextView
+            android:id="@+id/list_item_budget_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#F7F9FA"/>
+
+        <TextView
+            android:id="@+id/list_item_budget_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#4AD24A"
+            android:text="CLICK TO ADD BUDGET" />
+
+        <TextView
+            android:id="@+id/list_item_budget_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#F7F9FA"
+            android:textSize="16sp"/>
+
+</LinearLayout>
